@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NEO Estate — Real Estate in Baku</title>
+  <meta name="description" content="NEO Estate — premium real estate agency in Baku. Part of the NEO ecosystem." />
+  <link rel="icon" type="image/png" href="media/favicon-v2.png" />
+  <link rel="apple-touch-icon" href="media/apple-touch-v2.png" />
+  <meta name="theme-color" content="#222c39" />
+  <link rel="canonical" href="https://neoestate.az/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="NEO Estate — Real Estate in Baku" />
+  <meta property="og:description" content="Premium real estate agency in Baku. Part of the NEO ecosystem — buy, sell and rent without the hassle." />
+  <meta property="og:image" content="https://neoestate.az/media/logo.png" />
+  <meta property="og:url" content="https://neoestate.az/" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="NEO Estate — Real Estate in Baku" />
+  <meta name="twitter:description" content="Premium real estate agency in Baku. Part of the NEO ecosystem." />
+  <meta name="twitter:image" content="https://neoestate.az/media/logo.png" />
+  <link rel="stylesheet" href="styles.css" />
+  <noscript><style>.reveal{opacity:1!important;transform:none!important}</style></noscript>
+</head>
+<body>
+
+  <!-- ============ HEADER ============ -->
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false" aria-controls="sidebar">
+        <span class="menu-icon" aria-hidden="true"><span></span><span></span><span></span></span>
+        <span class="menu-label" data-i18n="nav.menu">Menu</span>
+      </button>
+
+      <a href="index.html" class="logo logo-center" aria-label="NEO Estate — home">
+        <img src="media/logo-transparent.png" alt="NEO Estate" class="logo-img" draggable="true" />
+      </a>
+
+      <div class="header-right">
+        <div class="lang-toggle" id="langToggle" aria-label="Language" role="group">
+          <svg class="lang-globe" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3a15 15 0 0 1 0 18 15 15 0 0 1 0-18z"/></svg>
+          <button data-lang="en">EN</button>
+          <button data-lang="az">AZ</button>
+          <button data-lang="ru">RU</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ============ SIDEBAR ============ -->
+  <div class="sidebar-overlay" id="sidebarOverlay" hidden></div>
+  <aside class="sidebar" id="sidebar" aria-hidden="true">
+    <div class="sidebar-head">
+      <a href="index.html" aria-label="NEO Estate — home"><img src="media/logo-transparent.png" alt="NEO Estate" class="sidebar-logo" /></a>
+      <button class="sidebar-close" id="sidebarClose" aria-label="Close menu">&times;</button>
+    </div>
+    <nav class="sidebar-nav" aria-label="Main">
+      <a href="index.html" data-i18n="nav.home">Home</a>
+      <a href="about.html" data-i18n="nav.about">About</a>
+      <a href="index.html#services" data-i18n="nav.services">Services</a>
+      <div class="sidebar-group">
+        <button type="button" class="sidebar-parent" id="partnersParent" aria-expanded="false">
+          <span data-i18n="nav.partners">Partners</span>
+          <svg class="chev" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+        </button>
+        <div class="sidebar-sub"><div class="sidebar-sub-inner">
+          <a href="bahar.html">Bahar Residence</a>
+          <a href="raffle-edition.html">Raffle Edition</a>
+          <a href="swissotel.html">Raffle Residence &amp; Swissôtel</a>
+          <a href="partners.html" data-i18n="nav.allPartners">All partners</a>
+        </div></div>
+      </div>
+      <a href="plans.html" data-i18n="nav.plans">Floor plans</a>
+    </nav>
+    <div class="sidebar-foot">
+      <span class="sidebar-foot-label" data-i18n="nav.contact">Contact</span>
+      <a href="tel:+994506873333" class="sidebar-phone">+994 50 687 33 33</a>
+    </div>
+  </aside>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero">
+    <!-- Фоновое видео: размыто и затонировано под бренд через CSS (.hero-video).
+         Файл лежит в media/baku.mp4 — можно заменить на другой ролик. -->
+    <div class="hero-media" aria-hidden="true">
+      <video class="hero-video" autoplay muted loop playsinline preload="auto">
+        <source src="media/baku.mp4" type="video/mp4" />
+      </video>
+      <div class="hero-overlay"></div>
+    </div>
+    <div class="container hero-inner">
+      <span class="hero-tag reveal" data-i18n="hero.tag">Part of NEO</span>
+      <h1 class="hero-logo reveal" aria-label="NEO Estate">
+        <img src="media/logo-transparent.png" alt="NEO Estate" class="hero-logo-img" draggable="true" />
+      </h1>
+      <p class="hero-subtitle reveal" data-i18n="hero.subtitle">Buying, selling and renting property in Baku — without the hassle.</p>
+      <p class="hero-text reveal" data-i18n="hero.text">You sign one agreement, and we take care of the rest: ads, photos, viewings, negotiations, documents and the deal.</p>
+      <div class="hero-actions reveal">
+        <a href="partners.html" class="btn btn-primary" data-i18n="hero.cta">View projects</a>
+        <a href="#contact" class="btn btn-ghost" data-i18n="hero.cta2">Contact us</a>
+      </div>
+    </div>
+    <a href="#about" class="scroll-cue" aria-label="Scroll down">
+      <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+    </a>
+  </section>
+
+  <!-- ============ STATS ============ -->
+  <section class="section" style="padding-top:0;">
+    <div class="container">
+      <div class="stats">
+        <div class="stat reveal"><div class="stat-num" data-i18n="stats.s1n">45 / 90</div><div class="stat-label" data-i18n="stats.s1l">days to sell — or no commission</div></div>
+        <div class="stat reveal"><div class="stat-num" data-i18n="stats.s2n">3</div><div class="stat-label" data-i18n="stats.s2l">businesses under one brand</div></div>
+        <div class="stat reveal"><div class="stat-num" data-i18n="stats.s3n">1</div><div class="stat-label" data-i18n="stats.s3l">agreement — we do the rest</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ABOUT (short) ============ -->
+  <section class="section" id="about" style="padding-top:30px;">
+    <div class="container">
+      <div class="section-head">
+        <h2 class="section-title reveal" data-i18n="about.title">About us</h2>
+        <p class="section-lead reveal" data-i18n="about.lead">We're a real estate agency in Baku, part of NEO together with NEO Motors and NEO Service.</p>
+      </div>
+      <div class="prose center reveal">
+        <p data-i18n="about.p1">Our mission is simple: to free the client from the headache of real estate.</p>
+        <a href="about.html" class="btn btn-ghost" style="margin-top:18px" data-i18n="about.more">Learn more about us →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SERVICES ============ -->
+  <section class="section section-alt" id="services">
+    <div class="container">
+      <div class="section-head">
+        <h2 class="section-title reveal" data-i18n="services.title">What we do</h2>
+        <p class="section-lead reveal" data-i18n="services.lead">From a single sale to long-term management of your investment.</p>
+      </div>
+      <div class="cards">
+        <article class="card reveal"><div class="card-icon"><svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="7.5" cy="15.5" r="4.5"/><path d="m21 2-9.6 9.6"/><path d="m15.5 7.5 3 3L22 7l-3-3"/></svg></div><h3 data-i18n="svc1.title">Sale & purchase</h3><p data-i18n="svc1.text">Apartments, houses, land or entire properties — full support from photoshoot to the signed deal.</p></article>
+        <article class="card reveal"><div class="card-icon"><svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><path d="M9 13h6"/><path d="M9 17h4"/></svg></div><h3 data-i18n="svc2.title">Rent</h3><p data-i18n="svc2.text">We find tenants, vet them and run the rental agreement from start to finish.</p></article>
+        <article class="card reveal"><div class="card-icon"><svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="3" width="16" height="18" rx="1"/><path d="M9 21v-4h6v4"/><path d="M8 7h.01"/><path d="M12 7h.01"/><path d="M16 7h.01"/><path d="M8 11h.01"/><path d="M12 11h.01"/><path d="M16 11h.01"/></svg></div><h3 data-i18n="svc3.title">NEO Manage</h3><p data-i18n="svc3.text">Property management for investors: we find tenants, control payments and solve everyday issues — you just receive the money.</p></article>
+        <article class="card reveal"><div class="card-icon"><svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-1.4-2.2-2.3c-.5-.4-1.1-.7-1.8-.7H5c-.6 0-1.1.4-1.4.9l-1.4 2.9A3.7 3.7 0 0 0 2 12v4c0 .6.4 1 1 1h2"/><circle cx="7" cy="17" r="2"/><path d="M9 17h6"/><circle cx="17" cy="17" r="2"/></svg></div><h3 data-i18n="svc4.title">Real estate trade-in</h3><p data-i18n="svc4.text">Put your car toward buying a property. Since we sell cars too, it can all be arranged in one place.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ЛЕНТА-ФРАЗА ============ -->
+  <section class="tick" aria-hidden="true">
+    <div class="tick-track">
+      <span data-i18n="mq.f2">Live where it's beautiful</span>
+      <span data-i18n="mq.f2">Live where it's beautiful</span>
+      <span data-i18n="mq.f2">Live where it's beautiful</span>
+      <span data-i18n="mq.f2">Live where it's beautiful</span>
+      <span data-i18n="mq.f2">Live where it's beautiful</span>
+      <span data-i18n="mq.f2">Live where it's beautiful</span>
+    </div>
+  </section>
+
+  <!-- ============ WHY US ============ -->
+  <section class="section" id="why">
+    <div class="container">
+      <div class="section-head">
+        <h2 class="section-title reveal" data-i18n="advantages.title">Why NEO Estate?</h2>
+      </div>
+      <div class="cards">
+        <article class="card reveal"><div class="card-icon"><svg viewBox="0 0 24 24" width="30" height="30" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11.4 12 4l9 7.4"/><path d="M5 9.8V20h14V9.8"/><path d="M10 20v-6h4v6"/></svg></div><h3 data-i18n="card1.title">Everything under one roof</h3><p data-i18n="card1.text">Advertising, photo & video, negotiations, documents and closing — your whole deal is handled by one team.</p></article>
+        <article class="card reveal"><div class="card-icon"><svg viewBox="0 0 24 24" width="27" height="27" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="m11 17 2 2a1 1 0 1 0 3-3"/><path d="m14 14 2.5 2.5a1 1 0 1 0 3-3l-3.88-3.88a3 3 0 0 0-4.24 0l-.88.88a1 1 0 1 1-3-3l2.81-2.81a5.79 5.79 0 0 1 7.06-.87l.47.28a2 2 0 0 0 1.42.25L21 4"/><path d="m21 3 1 11h-2"/><path d="M3 3 2 14l6.5 6.5a1 1 0 1 0 3-3"/><path d="M3 4h8"/></svg></div><h3 data-i18n="card2.title">Result guarantee</h3><p data-i18n="card2.text">Not sold within the agreed term — no commission. 45 days for economy & business, 90 days for luxury.</p></article>
+        <article class="card reveal"><div class="card-icon"><svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div><h3 data-i18n="card3.title">Full confidentiality</h3><p data-i18n="card3.text">Buyer and seller never deal directly. Every step goes through us — complete privacy for both sides.</p></article>
+        <article class="card reveal"><div class="card-icon"><img src="media/logo-neo.png" alt="NEO" style="width:42px;height:auto;display:block;" /></div><h3 data-i18n="card4.title">Part of NEO</h3><p data-i18n="card4.text">We're from the same group as NEO Motors and NEO Service, with clients who already know the brand.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ECOSYSTEM ============ -->
+  <section class="section section-alt" id="ecosystem">
+    <div class="container eco-wrap">
+      <div class="section-head" style="margin-bottom:28px;">
+        <h2 class="section-title reveal" data-i18n="eco.title">One ecosystem</h2>
+      </div>
+      <p class="eco-text reveal" data-i18n="eco.text">Three directions, one brand, one client base. A client who bought a car from NEO Motors already trusts us.</p>
+      <div class="eco-cols">
+        <div class="eco-col reveal"><div class="eco-name"><span class="g">NEO</span> Motors</div><div class="eco-sub" data-i18n="eco.motors">premium cars</div></div>
+        <div class="eco-col reveal"><div class="eco-name"><span class="g">NEO</span> Service</div><div class="eco-sub" data-i18n="eco.service">service & maintenance</div></div>
+        <div class="eco-col is-estate reveal"><div class="eco-name"><span class="g">NEO</span> Estate</div><div class="eco-sub" data-i18n="eco.estate">real estate</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+
+  <section class="section section-alt" id="contact">
+    <div class="container contact-inner">
+      <div class="section-head">
+        <h2 class="section-title reveal" data-i18n="contact.title">Get in touch</h2>
+        <p class="section-lead reveal" data-i18n="contact.text">Have a property to sell or rent? Contact us — the rest is on us.</p>
+      </div>
+      <!-- НОМЕРА — можно добавлять/убирать -->
+      <div class="phones reveal">
+        <a class="phone" href="tel:+994506873333">+994 50 687 33 33</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-logo"><img src="media/logo-transparent.png" alt="NEO Estate" class="footer-logo-img" draggable="true" /></div>
+      <!-- TODO: заменить на прямой профиль NEO Estate на bina.az, когда будет -->
+      <a class="bina-link" href="https://bina.az" target="_blank" rel="noopener">
+        <svg class="bina-pin" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><circle cx="12" cy="10" r="2.4"/></svg>
+        <span data-i18n="footer.find">Find us on bina.az</span>
+        <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7"/><path d="M9 7h8v8"/></svg>
+      </a>
+      <div class="socials" aria-label="Social media">
+        <a href="https://www.facebook.com/neoestates/" target="_blank" rel="noopener" aria-label="Facebook" title="Facebook"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M13.5 21v-7h2.4l.4-2.8h-2.8V9.4c0-.8.2-1.4 1.4-1.4H16V5.5c-.3 0-1.2-.1-2.2-.1-2.2 0-3.7 1.3-3.7 3.8v2H7.7V14h2.4v7h3.4z"/></svg></a>
+        <a href="https://www.instagram.com/neoestate.az/?hl=en" target="_blank" rel="noopener" aria-label="Instagram" title="Instagram"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a>
+        <!-- TODO: подтвердить настоящий TikTok (в брифе ссылка вела на Instagram) -->
+        <a href="https://www.tiktok.com/@neoestate.az" target="_blank" rel="noopener" aria-label="TikTok" title="TikTok"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M16 3c.3 2 1.5 3.5 3.5 3.8V9c-1.3 0-2.5-.4-3.5-1.1V15a5 5 0 1 1-5-5c.3 0 .6 0 .9.1v2.3a2.7 2.7 0 1 0 1.9 2.6V3H16z"/></svg></a>
+      </div>
+      <div class="footer-contact">
+        <a href="tel:+994506873333">+994 50 687 33 33</a>
+        <span class="footer-sep" aria-hidden="true">·</span>
+        <span>Bakı, Ağ Şəhər, Mərkəzi Bulvar küç. 20</span>
+      </div>
+      <p class="copyright" data-i18n="footer.rights">© 2026 NEO Estate — part of the NEO ecosystem.</p>
+    </div>
+  </footer>
+
+  <script src="media/lenis.min.js"></script>
+  <script src="script.js"></script>
+  <!-- Vercel Web Analytics -->
+  <script defer src="/_vercel/insights/script.js"></script>
+</body>
+</html>
